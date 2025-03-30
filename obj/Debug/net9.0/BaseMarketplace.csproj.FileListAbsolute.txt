@@ -144,3 +144,4 @@ C:\Users\Viktor\Desktop\BaseMarketplace\obj\Debug\net9.0\refint\BaseMarketplace.
 C:\Users\Viktor\Desktop\BaseMarketplace\obj\Debug\net9.0\BaseMarketplace.pdb
 C:\Users\Viktor\Desktop\BaseMarketplace\obj\Debug\net9.0\BaseMarketplace.genruntimeconfig.cache
 C:\Users\Viktor\Desktop\BaseMarketplace\obj\Debug\net9.0\ref\BaseMarketplace.dll
+C:\Users\Viktor\Desktop\BaseMarketplace\obj\Debug\net9.0\BaseMarketplace.sourcelink.json

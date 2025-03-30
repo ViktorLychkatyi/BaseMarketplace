@@ -1,16 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using BaseMarketplace.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace BaseMarketplace.Models;
+namespace BaseMarketplace.Contexts;
 
-public partial class MyDbContext : DbContext
+public partial class ApplicationDbContext : DbContext
 {
-    public MyDbContext()
+    public ApplicationDbContext()
     {
     }
 
-    public MyDbContext(DbContextOptions<MyDbContext> options)
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
         : base(options)
     {
     }
@@ -28,7 +29,6 @@ public partial class MyDbContext : DbContext
     public virtual DbSet<User> Users { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
         => optionsBuilder.UseSqlServer("Server=localhost;Database=Marketplace;Trusted_Connection=True;TrustServerCertificate=True;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -74,25 +74,6 @@ public partial class MyDbContext : DbContext
                 .HasConstraintName("FK_Product_Category");
         });
 
-        modelBuilder.Entity<ProductCategory>(entity =>
-        {
-            entity.ToTable("ProductCategory");
-
-            entity.Property(e => e.ProductCategoryId).HasColumnName("ProductCategoryID");
-            entity.Property(e => e.CategoryId).HasColumnName("CategoryID");
-            entity.Property(e => e.ProductId).HasColumnName("ProductID");
-
-            entity.HasOne(d => d.Category).WithMany(p => p.ProductCategories)
-                .HasForeignKey(d => d.CategoryId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_ProductCategory_Category");
-
-            entity.HasOne(d => d.Product).WithMany(p => p.ProductCategories)
-                .HasForeignKey(d => d.ProductId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_ProductCategory_Product");
-        });
-
         modelBuilder.Entity<Review>(entity =>
         {
             entity.ToTable("Review");
@@ -122,6 +103,21 @@ public partial class MyDbContext : DbContext
             entity.Property(e => e.Name).HasMaxLength(50);
             entity.Property(e => e.Password).HasMaxLength(50);
         });
+
+        base.OnModelCreating(modelBuilder);
+
+        modelBuilder.Entity<ProductCategory>()
+            .HasKey(pc => new { pc.ProductId, pc.CategoryId });
+
+        modelBuilder.Entity<ProductCategory>()
+            .HasOne(pc => pc.Product)
+            .WithMany(p => p.ProductCategories)
+            .HasForeignKey(pc => pc.ProductId);
+
+        modelBuilder.Entity<ProductCategory>()
+            .HasOne(pc => pc.Category)
+            .WithMany(c => c.ProductCategories)
+            .HasForeignKey(pc => pc.CategoryId);
 
         OnModelCreatingPartial(modelBuilder);
     }
