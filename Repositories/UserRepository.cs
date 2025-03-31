@@ -13,6 +13,7 @@ namespace BaseMarketplace.Repositories
     {
         public void AddUser(string name, string email, string password)
         {
+            name = string.IsNullOrWhiteSpace(name) ? null : name;
             using (var context = new ApplicationDbContext())
             {
                 var user = new User { Name = name, Email = email, Password = password };

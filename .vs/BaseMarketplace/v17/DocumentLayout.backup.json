@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Viktor\\Desktop\\BaseMarketplace\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EBAE81CC-8980-4ECE-96ED-6B3D37029A55}|BaseMarketplace.csproj|c:\\users\\viktor\\desktop\\basemarketplace\\contexts\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBAE81CC-8980-4ECE-96ED-6B3D37029A55}|BaseMarketplace.csproj|solutionrelative:contexts\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EBAE81CC-8980-4ECE-96ED-6B3D37029A55}|BaseMarketplace.csproj|c:\\users\\viktor\\desktop\\basemarketplace\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EBAE81CC-8980-4ECE-96ED-6B3D37029A55}|BaseMarketplace.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBAE81CC-8980-4ECE-96ED-6B3D37029A55}|BaseMarketplace.csproj|c:\\users\\viktor\\desktop\\basemarketplace\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBAE81CC-8980-4ECE-96ED-6B3D37029A55}|BaseMarketplace.csproj|solutionrelative:repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EBAE81CC-8980-4ECE-96ED-6B3D37029A55}|BaseMarketplace.csproj|c:\\users\\viktor\\desktop\\basemarketplace\\models\\productsofcategories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBAE81CC-8980-4ECE-96ED-6B3D37029A55}|BaseMarketplace.csproj|solutionrelative:models\\productsofcategories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBAE81CC-8980-4ECE-96ED-6B3D37029A55}|BaseMarketplace.csproj|c:\\users\\viktor\\desktop\\basemarketplace\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBAE81CC-8980-4ECE-96ED-6B3D37029A55}|BaseMarketplace.csproj|solutionrelative:repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EBAE81CC-8980-4ECE-96ED-6B3D37029A55}|BaseMarketplace.csproj|c:\\users\\viktor\\desktop\\basemarketplace\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBAE81CC-8980-4ECE-96ED-6B3D37029A55}|BaseMarketplace.csproj|solutionrelative:models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EBAE81CC-8980-4ECE-96ED-6B3D37029A55}|BaseMarketplace.csproj|c:\\users\\viktor\\desktop\\basemarketplace\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EBAE81CC-8980-4ECE-96ED-6B3D37029A55}|BaseMarketplace.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBAE81CC-8980-4ECE-96ED-6B3D37029A55}|BaseMarketplace.csproj|c:\\users\\viktor\\desktop\\basemarketplace\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBAE81CC-8980-4ECE-96ED-6B3D37029A55}|BaseMarketplace.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EBAE81CC-8980-4ECE-96ED-6B3D37029A55}|BaseMarketplace.csproj|c:\\users\\viktor\\desktop\\basemarketplace\\models\\productcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,6 +29,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{EBAE81CC-8980-4ECE-96ED-6B3D37029A55}|BaseMarketplace.csproj|c:\\users\\viktor\\desktop\\basemarketplace\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EBAE81CC-8980-4ECE-96ED-6B3D37029A55}|BaseMarketplace.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBAE81CC-8980-4ECE-96ED-6B3D37029A55}|BaseMarketplace.csproj|c:\\users\\viktor\\desktop\\basemarketplace\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBAE81CC-8980-4ECE-96ED-6B3D37029A55}|BaseMarketplace.csproj|solutionrelative:repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBAE81CC-8980-4ECE-96ED-6B3D37029A55}|BaseMarketplace.csproj|c:\\users\\viktor\\desktop\\basemarketplace\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBAE81CC-8980-4ECE-96ED-6B3D37029A55}|BaseMarketplace.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBAE81CC-8980-4ECE-96ED-6B3D37029A55}|BaseMarketplace.csproj|c:\\users\\viktor\\desktop\\basemarketplace\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBAE81CC-8980-4ECE-96ED-6B3D37029A55}|BaseMarketplace.csproj|solutionrelative:repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EBAE81CC-8980-4ECE-96ED-6B3D37029A55}|BaseMarketplace.csproj|c:\\users\\viktor\\desktop\\basemarketplace\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,58 +54,98 @@
       "DocumentGroups": [
         {
           "DockedWidth": 188,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "ProductsOfCategories.cs",
+              "DocumentMoniker": "C:\\Users\\Viktor\\Desktop\\BaseMarketplace\\Models\\ProductsOfCategories.cs",
+              "RelativeDocumentMoniker": "Models\\ProductsOfCategories.cs",
+              "ToolTip": "C:\\Users\\Viktor\\Desktop\\BaseMarketplace\\Models\\ProductsOfCategories.cs",
+              "RelativeToolTip": "Models\\ProductsOfCategories.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T22:21:08.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Review.cs",
+              "DocumentMoniker": "C:\\Users\\Viktor\\Desktop\\BaseMarketplace\\Models\\Review.cs",
+              "RelativeDocumentMoniker": "Models\\Review.cs",
+              "ToolTip": "C:\\Users\\Viktor\\Desktop\\BaseMarketplace\\Models\\Review.cs",
+              "RelativeToolTip": "Models\\Review.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T20:43:53.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Viktor\\Desktop\\BaseMarketplace\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\Viktor\\Desktop\\BaseMarketplace\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T19:18:51.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Viktor\\Desktop\\BaseMarketplace\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Viktor\\Desktop\\BaseMarketplace\\Program.cs*",
-              "RelativeToolTip": "Program.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAFAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Viktor\\Desktop\\BaseMarketplace\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwCMAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-29T17:45:58.422Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Viktor\\Desktop\\BaseMarketplace\\Contexts\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Contexts\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Viktor\\Desktop\\BaseMarketplace\\Contexts\\ApplicationDbContext.cs*",
+              "RelativeToolTip": "Contexts\\ApplicationDbContext.cs*",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAkwIQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T15:29:53.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\Viktor\\Desktop\\BaseMarketplace\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\UserRepository.cs",
               "ToolTip": "C:\\Users\\Viktor\\Desktop\\BaseMarketplace\\Repositories\\UserRepository.cs",
               "RelativeToolTip": "Repositories\\UserRepository.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAowDkAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowDkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-30T13:50:04.914Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProductRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Viktor\\Desktop\\BaseMarketplace\\Repositories\\ProductRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\ProductRepository.cs",
-              "ToolTip": "C:\\Users\\Viktor\\Desktop\\BaseMarketplace\\Repositories\\ProductRepository.cs",
-              "RelativeToolTip": "Repositories\\ProductRepository.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAuwDIAAABbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T13:49:51.346Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\Viktor\\Desktop\\BaseMarketplace\\Models\\Product.cs",
               "RelativeDocumentMoniker": "Models\\Product.cs",
               "ToolTip": "C:\\Users\\Viktor\\Desktop\\BaseMarketplace\\Models\\Product.cs",
               "RelativeToolTip": "Models\\Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T19:11:38.134Z"
+              "WhenOpened": "2025-03-29T19:11:38.134Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -105,32 +157,8 @@
               "RelativeToolTip": "Models\\ProductCategory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T12:36:31.615Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Viktor\\Desktop\\BaseMarketplace\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "C:\\Users\\Viktor\\Desktop\\BaseMarketplace\\Models\\User.cs",
-              "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T19:18:51.433Z",
+              "WhenOpened": "2025-03-30T12:36:31.615Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\Viktor\\Desktop\\BaseMarketplace\\Models\\Order.cs",
-              "RelativeDocumentMoniker": "Models\\Order.cs",
-              "ToolTip": "C:\\Users\\Viktor\\Desktop\\BaseMarketplace\\Models\\Order.cs",
-              "RelativeToolTip": "Models\\Order.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T19:11:33.691Z"
             },
             {
               "$type": "Document",
@@ -142,7 +170,34 @@
               "RelativeToolTip": "Models\\Category.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T19:11:22.957Z"
+              "WhenOpened": "2025-03-29T19:11:22.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Viktor\\Desktop\\BaseMarketplace\\Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\ProductRepository.cs",
+              "ToolTip": "C:\\Users\\Viktor\\Desktop\\BaseMarketplace\\Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "Repositories\\ProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T13:49:51.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\Viktor\\Desktop\\BaseMarketplace\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Models\\Order.cs",
+              "ToolTip": "C:\\Users\\Viktor\\Desktop\\BaseMarketplace\\Models\\Order.cs",
+              "RelativeToolTip": "Models\\Order.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T19:11:33.691Z",
+              "EditorCaption": ""
             }
           ]
         }

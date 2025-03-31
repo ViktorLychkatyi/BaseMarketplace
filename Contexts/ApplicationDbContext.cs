@@ -119,6 +119,16 @@ public partial class ApplicationDbContext : DbContext
             .WithMany(c => c.ProductCategories)
             .HasForeignKey(pc => pc.CategoryId);
 
+        modelBuilder.Entity<ProductsOfCategories>(entity =>
+        {
+            entity.HasNoKey();
+            entity.ToView("ProductsOfCategories");
+            entity.Property(e => e.CategoryId).HasColumnName("CategoryID");
+            entity.Property(e => e.CategoryName).HasMaxLength(50);
+            entity.Property(e => e.ProductId).HasColumnName("ProductID");
+            entity.Property(e => e.Name).HasMaxLength(50);
+        });
+
         OnModelCreatingPartial(modelBuilder);
     }
 

@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace BaseMarketplace.Models;
 
 public partial class Order
 {
+    [Key]
     public int OrderId { get; set; }
 
     public int? UserId { get; set; }
