@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using BaseMarketplace.Models;
 using Microsoft.EntityFrameworkCore;
+using Moq;
 
 namespace BaseMarketplace.Contexts;
 
@@ -29,7 +30,12 @@ public partial class ApplicationDbContext : DbContext
     public virtual DbSet<User> Users { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlServer("Server=localhost;Database=Marketplace;Trusted_Connection=True;TrustServerCertificate=True;");
+    {
+        if (!optionsBuilder.IsConfigured)
+        {
+            optionsBuilder.UseSqlServer("Server=localhost;Database=Marketplace;Trusted_Connection=True;TrustServerCertificate=True;");
+        }
+    }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

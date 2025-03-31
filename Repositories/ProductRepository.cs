@@ -1,10 +1,37 @@
 ﻿using BaseMarketplace.Contexts;
 using BaseMarketplace.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace BaseMarketplace.Repositories
 {
     public class ProductRepository
     {
+        public void GetProductsOfCategories()
+        {
+            using var context = new ApplicationDbContext();
+
+            var categories = context.Categories
+                .Include(c => c.Products)
+                .ToList();
+
+            foreach (var category in categories)
+            {
+                Console.WriteLine($"Категория: {category.Name}");
+
+                if (category.Products.Any())
+                {
+                    foreach (var product in category.Products)
+                    {
+                        Console.WriteLine($"Товар: {product.Name}");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine(" Нет товаров");
+                }
+            }
+        }
+
         public void AddProduct(string name, decimal price, int category_id)
         {
             using (var context = new ApplicationDbContext())
