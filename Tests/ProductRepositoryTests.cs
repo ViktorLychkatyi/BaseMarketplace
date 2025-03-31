@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using NUnit.Framework;
 using BaseMarketplace.Models;
+using Dapper;
 
 namespace BaseMarketplace.Tests
 {

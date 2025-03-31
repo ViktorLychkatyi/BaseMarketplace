@@ -1,5 +1,7 @@
 ﻿using BaseMarketplace.Contexts;
 using Microsoft.Data.SqlClient;
+using Dapper;
+using System.Text;
 
 namespace BaseMarketplace
 {
@@ -12,14 +14,14 @@ namespace BaseMarketplace
 
             // === классы репозитоии ===
 
-            var userRepository = new Repositories.UserRepository();
+            //var userRepository = new Repositories.UserRepository();
             //userRepository.AddUser("", "yan@email.com", "11111");
             //userRepository.GetAll();
             //userRepository.GetById(1);
             //userRepository.Update(2, "Ян", "yan@email.com", "2222");
             //userRepository.Delete(2);
 
-            var productRepository = new Repositories.ProductRepository();
+            //var productRepository = new Repositories.ProductRepository();
             //productRepository.AddProduct("Флеш USB", 100, 1);
             //productRepository.AddProduct("Флеш USB", 100, 1);
             //productRepository.AddProduct("Флеш USB", 100, 1);
@@ -30,11 +32,11 @@ namespace BaseMarketplace
             //productRepository.GetById(2);
             //productRepository.Update(2, "Флеш USB", 200, 1);
             //productRepository.Delete(2);
-            productRepository.GetProductsOfCategories();
+            //productRepository.GetProductsOfCategories();
 
             // === FLUENT API, Data Annotations, HP, SP ===
 
-            //string connectionString = "Server=localhost;Database=PeopleHobbies;Trusted_Connection=True;TrustServerCertificate=True;";
+            //string connectionString = "Server=localhost;Database=Marketplace;Trusted_Connection=True;TrustServerCertificate=True;";
 
             //using (var connection = new SqlConnection(connectionString))
             //{
@@ -57,12 +59,23 @@ namespace BaseMarketplace
             //    }
             //}
 
-            // === Способы загрузки данных ===
-
-
-
-
             // === Dapper ===
+
+            Console.OutputEncoding = Encoding.Unicode;
+
+            string connectionString = "Server=localhost;Database=Marketplace;Trusted_Connection=True;TrustServerCertificate=True;";
+
+            using (var connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                var result = connection.Query("SELECT * FROM Product").ToList();
+
+                foreach (var product in result)
+                {
+                    Console.WriteLine($"ProductId: {product.ProductId}\nName: {product.Name}\nPrice: {product.Price}\nCategoryId: {product.CategoryId}\n");
+                }
+            }
         }
     }
 }
