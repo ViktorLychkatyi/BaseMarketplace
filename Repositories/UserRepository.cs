@@ -7,11 +7,15 @@ using BaseMarketplace.Contexts;
 using BaseMarketplace.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
+using Dapper;
+using System.Data.SqlClient;
 
 namespace BaseMarketplace.Repositories
 {
     public class UserRepository
     {
+        private readonly string connectionString = "YourConnectionStringHere"; // Add this line to define connectionString
+
         public void AddUser(string name, string email, string password)
         {
             name = string.IsNullOrWhiteSpace(name) ? null : name;
@@ -25,7 +29,6 @@ namespace BaseMarketplace.Repositories
                 Console.WriteLine($"Пользователь {user.Name} добавлен!");
             }
         }
-
 
         public void GetAll()
         {
@@ -48,7 +51,7 @@ namespace BaseMarketplace.Repositories
             }
         }
 
-        public void Update(int user_id, string name, string email, string password)
+        public void UpdateUser(int user_id, string name, string email, string password)
         {
             using (var context = new ApplicationDbContext())
             {
@@ -61,7 +64,7 @@ namespace BaseMarketplace.Repositories
             }
         }
 
-        public void Delete(int id)
+        public void DeleteUser(int id)
         {
             using (var context = new ApplicationDbContext())
             {
